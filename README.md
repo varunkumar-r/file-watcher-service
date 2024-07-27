@@ -22,3 +22,37 @@ This is a Spring Boot application that watches directories for file changes and 
 ```bash
 git clone https://github.com/yourusername/file-watcher-service.git
 cd file-watcher-service
+```
+# File Watcher Service - REST API Endpoints
+
+## Start Watching a Directory
+
+**URL:** `/api/filewatcher/start`  
+**Method:** `POST`  
+**Request Body:**
+
+```json
+{
+  "sourceDir": "/path/to/source",
+  "targetDir": "/path/to/target",
+  "logOnly": false
+}
+```
+**Response:**
+
+```json
+
+{
+  "message": "File watch service started for /path/to/source"
+}
+```
+
+**Example using curl:**
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{
+  "sourceDir": "/path/to/source",
+  "targetDir": "/path/to/target",
+  "logOnly": false
+}' http://localhost:8080/api/filewatcher/start
+
+```
