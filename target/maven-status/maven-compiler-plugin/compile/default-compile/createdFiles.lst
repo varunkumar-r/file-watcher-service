@@ -1,0 +1,4 @@
+com/util/filewatcher/service/FileWatcherService.class
+com/util/filewatcher/FileWatcherApplication.class
+com/util/filewatcher/model/WatchRequest.class
+com/util/filewatcher/controller/FileWatcherController.class
