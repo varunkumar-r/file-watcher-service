@@ -47,7 +47,7 @@ cd file-watcher-service
 }
 ```
 
-**Example using curl:**
+**Example using curl::**
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{
   "sourceDir": "/path/to/source",
