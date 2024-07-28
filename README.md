@@ -23,6 +23,20 @@ This is a Spring Boot application that watches directories for file changes and 
 git clone https://github.com/yourusername/file-watcher-service.git
 cd file-watcher-service
 ```
+
+### Build the Project
+
+```bash
+mvn clean package
+```
+
+### Run the Application
+
+```bash
+java -jar target/file-watcher-1.0.0.jar --spring.config.location=classpath:/application.properties,optional:/path/to/external/application.properties
+
+```
+
 # File Watcher Service - REST API Endpoints
 
 ## Start Watching a Directory
